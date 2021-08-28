@@ -43,7 +43,7 @@ def fibonacci2(n):
         return fibonacci2(n - 1) + fibonacci2(n - 2)
 ```
 
-The "else" and "return" collapse into the same expression in both cases.
+The `else` and `return` collapse into the same expression in both cases.
 
 ```haskell
 fibonacci n =
@@ -79,7 +79,7 @@ def allPairs(arrA, arrB):
 def squares(n):
     return [x**2 for x in range(1, n)]
 
-def pythagoreanTriples(n):
+def truples(n):
     return [(a, b, c) for a in range(1, n) for b in range(1, n) for c in range(1, n)]
 ```
 
@@ -90,7 +90,7 @@ allPairs arrA arrB =
 squares n =
   [ x ^ 2 | x <- range 1 n ]
 
-pythagoreanTriples n =
+truples n =
   [ (a, b, c) | a <- range 1 n, b <- range 1 n, c <- range 1 n ]
 ```
 
