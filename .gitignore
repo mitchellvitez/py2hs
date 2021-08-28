@@ -1,0 +1,5 @@
+.stack-work/
+*~
+*.swp
+py2hs.cabal
+dist-newstyle/

@@ -1,0 +1,34 @@
+name:                 py2hs
+version:             0.1.0.0
+github:              "mitchellvitez/py2hs"
+license:             BSD3
+author:              "Mitchell Vitez"
+maintainer:          "mitchell@vitez.me"
+copyright:           "Mitchell Vitez"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description:         Please see the README on GitHub at <https://github.com/mitchellvitez/py2hs#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+  - language-python
+  - extra
+
+executables:
+  py2hs-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - py2hs
+    - language-python
